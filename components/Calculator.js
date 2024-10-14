@@ -37,13 +37,13 @@ function StringCalculator() {
       <button
         onClick={handleCalculate}
         disabled={loading}
-        className={`w-full max-w-md p-2 rounded-md bg-blue-600 text-white font-semibold transition duration-300 
-          ${loading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500'}`}
+        className={`w-full max-w-md p-2 rounded-md bg-teal-500 border  text-black font-semibold transition duration-300 
+          ${loading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500'}`}
       >
         {loading ? 'Calculating...' : 'Calculate'}
       </button>
       {result !== null && (
-        <div className="mt-4 p-2 rounded-md bg-green-600 text-white">
+        <div className="mt-4 w-full p-2 text-center rounded-md bg-green-600 text-black font-bold">
           Result: {result}
         </div>
       )}
